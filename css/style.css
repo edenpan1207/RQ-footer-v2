@@ -1,0 +1,160 @@
+/* header 跟　content 可以先跳過 */
+
+body {
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+.header {
+    border-bottom: 1px solid rgba(192, 192, 192, 0.8);
+    height: 60px;
+}
+
+.header h1 {
+    margin: 0;
+    margin-top: 8px;
+}
+
+.content {
+    padding-top: 225px;
+    padding-bottom: 225px;
+}
+
+
+/* footer 我把它包在wrap內*/
+
+.footer {
+    min-height: 60px;
+    background-color: rgba(55, 118, 29, 0.8);
+    position: relative;
+}
+
+
+/* 上方 menu 部分 */
+
+.footer-top {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.footer-top ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-top ul li {
+    float: left;
+    padding-right: 80px;
+}
+
+.footer-top ul li a {
+    text-decoration: none;
+    color: rgba(233, 255, 234, 1);
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.footer-top ul li a:hover {
+    color: rgba(233, 255, 234, 0.5);
+    border-bottom: 3px solid rgba(233, 255, 234, 0.5);
+}
+
+
+/* 中間 icon */
+
+.footer-second {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* footer-second's ul class name */
+
+.image-flow {
+    list-style: none;
+    display: inline-block;
+}
+
+.image-flow li {
+    float: left;
+    padding-right: 50px;
+}
+
+.image-flow a img:hover {
+    border-radius: 100%;
+    box-shadow: 0px 2px 5px #2C3E50;
+}
+
+.image-flow a img:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 5px #2C3E50;
+}
+
+
+/* 中下方一句話介紹RQ部分 */
+
+.footer-third {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer-third h3 {
+    color: rgba(201, 228, 201, 1);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-third p {
+    color: rgba(201, 228, 201, 0.8);
+    line-height: 1.5em;
+}
+
+
+/* 最下方 Copyright */
+
+.copyright {
+    text-align: center;
+    border-top: 2px solid rgba(201, 228, 201, 0.3);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.copyright p a {
+    color: #2C3E50;
+}
+
+
+/* 點選至頂 */
+
+.scroll-top a {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+}
+
+
+/* 行動裝置排版 */
+
+@media(max-width: 568px) {
+    .footer-top {
+        text-align: left;
+        padding-top: 40px;
+        line-height: 2em;
+    }
+    .footer-top ul li {
+        float: none;
+    }
+    .footer-second {
+        text-align: left;
+    }
+    .image-flow li {
+        padding-right: 10px;
+    }
+    .footer-third {
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
